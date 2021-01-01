@@ -37,8 +37,8 @@ final_dataframe
 
 # Use Batch API Calls to Improve Performance :)
 def chunks(list, n):
-    # Yield successive n=sized chunks from list.
-    for in in range(0, len(list), n):
+    # Yield successive n-sized chunks from list.
+    for i in range(0, len(list), n):
         yield list[i:i + n]
 
 symbol_groups = list(chunks(stocks['Ticker'], 100))
